@@ -1,0 +1,19 @@
+import java.math.BigInteger;
+
+public class BigIntegerAddition {
+    public static void main(String[] args) {
+        // Define two large integers as strings
+        String num1 = "123456789012345678901234567890";
+        String num2 = "987654321098765432109876543210";
+
+        // Create BigInteger objects from the strings
+        BigInteger bigNum1 = new BigInteger(num1);
+        BigInteger bigNum2 = new BigInteger(num2);
+
+        // Perform addition
+        BigInteger sum = bigNum1.add(bigNum2);
+
+        // Display the result
+        System.out.println("Sum: " + sum);
+    }
+}
